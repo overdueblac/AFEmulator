@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishAot>true</PublishAot>
+    <!-- MongoDB.Driver 3.12 does not declare full AOT support. Keep linker warnings visible; constrain BSON paths and verify native integration. -->
+    <IlcTreatWarningsAsErrors>false</IlcTreatWarningsAsErrors>
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="AFServer.Desktop.Tests" />
+    <ProjectReference Include="../../AFConnect/AFConnect.Proxy/AFConnect.Proxy.csproj" />
+    <PackageReference Include="MongoDB.Driver" Version="3.12.0" />
+    <Content Include="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Game/Commerce/catalog.seed.json" Link="data/catalog.seed.json" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Game/Players/progression.seed.json" LogicalName="AFServer.ProgressionCatalog" />
+    <Content Include="data/native/*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="data/bio/*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="data/afdev-reserved.manifest.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

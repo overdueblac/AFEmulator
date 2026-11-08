@@ -1,0 +1,276 @@
+{
+  "capabilities": {
+    "available": [
+      "configuration_map_mode_directory",
+      "raw_configuration_rules"
+    ],
+    "unimplemented": {
+      "authoritative_gameplay_simulation": "Configuration records do not implement combat, physics or game rules.",
+      "class_defaults_and_inheritance": "Package class defaults and configuration inheritance are not resolved.",
+      "configuration_semantics": "Duplicate keys and array operators are preserved, not evaluated.",
+      "map_actors_navigation_and_kismet": "No actors, spawn points, navigation or level scripts are decoded.",
+      "map_availability": "Directory entries do not confirm that a map package exists or can be played.",
+      "map_geometry_and_collision": "No map package or collision geometry is decoded.",
+      "replicated_properties_and_rpc_schema": "No network field indices, RPC schema or codecs are recovered."
+    }
+  },
+  "converter": {
+    "name": "export-server-data.py",
+    "sha256": "e47bc048a039f5aacaa7e0531279593e4215c0eca81552f2843265669bc1dbbc",
+    "version": "1.0.0"
+  },
+  "files": [
+    {
+      "bytes": 1488108,
+      "name": "config-rules.json",
+      "sha256": "2602f7d6f9965b1e607e88ae461b027d9659c6a35d97f291eae5c472d405f90d"
+    },
+    {
+      "bytes": 45744,
+      "name": "map-catalog.json",
+      "sha256": "f2a6d1c82fe5a9472f77fddaad7cb064e8a626c8b2651514e30a4c2121fd4327"
+    }
+  ],
+  "provenance": "Hashes identify the supplied local configuration snapshot, not an assertion of pristine vendor defaults.",
+  "runtime": {
+    "client_files_required": false,
+    "complete_game_server": false,
+    "original_game_files_packaged": false
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 348759,
+      "decoded_sha256": "39a84771aa4623bc60abd12eef36e09cc1529610e7d6c5f19bd326aef63be922",
+      "encoding": "gbk",
+      "name": "DefaultCommodityLibrary.ini",
+      "purpose": "commodity_definitions",
+      "sha256": "8cbfcc8c2a5e4f06ba958fd36dd238cedf40c7279a3a7de371919e15e7cd55df",
+      "source_bytes": 32020,
+      "statistics": {
+        "assignments": 429,
+        "duplicate_keys": 426,
+        "repeated_sections": 0,
+        "sections": 1,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 80026,
+      "decoded_sha256": "e488319de1bb00e1e906e905f527b490ac9445ff98d8f8e9c52bd432a06d9dc8",
+      "encoding": "gbk",
+      "name": "DefaultGame.ini",
+      "purpose": "map_mode_directory",
+      "sha256": "a9e0c2ef83de94692de7d311dd629a0fb2c965db072cbbf78f68ae2ff355e483",
+      "source_bytes": 14372,
+      "statistics": {
+        "assignments": 1289,
+        "duplicate_keys": 587,
+        "repeated_sections": 0,
+        "sections": 179,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 322810,
+      "decoded_sha256": "f017a0390be53744146599bd9eb37e4fc0f998e73fbed9e9514b78d92aa7e7dd",
+      "encoding": "gbk",
+      "name": "DefaultItemLibrary.ini",
+      "purpose": "item_definitions",
+      "sha256": "0328404749adf6273ab28e82fe25c53a465276383b4773a2a2e4c2a39892a45f",
+      "source_bytes": 38388,
+      "statistics": {
+        "assignments": 566,
+        "duplicate_keys": 564,
+        "repeated_sections": 0,
+        "sections": 1,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 12320,
+      "decoded_sha256": "1dfdc72eedc185b86779d404a40a5972afc170f54be8f716134f9ab84c130f1b",
+      "encoding": "gbk",
+      "name": "DefaultMechaWeapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "bb9d5ef17629dcc4053fd83c0706cf787c5c62043f7d418cccca9360ae9ccaaa",
+      "source_bytes": 3060,
+      "statistics": {
+        "assignments": 395,
+        "duplicate_keys": 2,
+        "repeated_sections": 0,
+        "sections": 20,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 22737,
+      "decoded_sha256": "e7245b81080fd0873f771e44115d8db88d8edc2bde1106c7bcf14af7cc193371",
+      "encoding": "gbk",
+      "name": "DefaultPVEGame.ini",
+      "purpose": "pve_rules",
+      "sha256": "b304b0b02e801c745e84a54a8c56128947169d6fce8848e068c4eb1e320a40d3",
+      "source_bytes": 5972,
+      "statistics": {
+        "assignments": 656,
+        "duplicate_keys": 8,
+        "repeated_sections": 0,
+        "sections": 58,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 3138,
+      "decoded_sha256": "407ab62bb250c86fd390cbbea53537abecd97883c4c70ad93a689a866db5b4c9",
+      "encoding": "gbk",
+      "name": "DefaultPZZombieSkill.ini",
+      "purpose": "skill_rules",
+      "sha256": "1a8ee9ceeaf3cc52905b5a4f78d2f359b7a68a9e8f1ee62c5c629fb31cb2b600",
+      "source_bytes": 580,
+      "statistics": {
+        "assignments": 108,
+        "duplicate_keys": 0,
+        "repeated_sections": 0,
+        "sections": 25,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 6452,
+      "decoded_sha256": "ed73f8466b4e848f8fb30b5157cfd5a1e38d7ad6ae7fc052f6b277cbe3ae8d7c",
+      "encoding": "gbk",
+      "name": "DefaultPZZombieWeapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "caf2a4fda1f645b24b682d74f404ba77eb9a6ba150de7783445d137a7ac5fa9e",
+      "source_bytes": 884,
+      "statistics": {
+        "assignments": 61,
+        "duplicate_keys": 1,
+        "repeated_sections": 0,
+        "sections": 9,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 3061,
+      "decoded_sha256": "a1daa63db4861c08f04c8e8f82081737e48c31030140f8f625979729a75eec8b",
+      "encoding": "gbk",
+      "name": "DefaultSkill.ini",
+      "purpose": "skill_rules",
+      "sha256": "6862fce1837944941b4b36d9ccf3a0c3f9a8a8458edfd67a45287cf928868740",
+      "source_bytes": 1108,
+      "statistics": {
+        "assignments": 107,
+        "duplicate_keys": 0,
+        "repeated_sections": 0,
+        "sections": 33,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 9714,
+      "decoded_sha256": "fe3447f10a732ce0ddf791d99556aeb4c7cb9e9be316f9b7fbf37c74c9cec826",
+      "encoding": "gbk",
+      "name": "DefaultTGBio3Weapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "5c4ec34dfc60c31c8354512401370b8ed3174bd838890d7bdfbd15baa8aa62d8",
+      "source_bytes": 2340,
+      "statistics": {
+        "assignments": 236,
+        "duplicate_keys": 3,
+        "repeated_sections": 0,
+        "sections": 7,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 1200,
+      "decoded_sha256": "7f789c5d0e8ea34023ec8748806d82e05af29d463dc72bd5b436b848f283ba11",
+      "encoding": "gbk",
+      "name": "DefaultTGBioSkill.ini",
+      "purpose": "skill_rules",
+      "sha256": "fbb9cdac1c0ee743367e37f9771087ccb7b6e8ac04e40f5ef5a74d0735176049",
+      "source_bytes": 372,
+      "statistics": {
+        "assignments": 48,
+        "duplicate_keys": 0,
+        "repeated_sections": 0,
+        "sections": 6,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 30008,
+      "decoded_sha256": "152088e89a98c6a15ea7197ffd0ed88ab86bbc1d70971a2c30d54e8a055d2692",
+      "encoding": "gbk",
+      "name": "DefaultTGBioWeapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "bb9375fd44eafcb49db5aeafa87f391ef67d39f27513bb4a056f12385f790cb6",
+      "source_bytes": 4628,
+      "statistics": {
+        "assignments": 847,
+        "duplicate_keys": 6,
+        "repeated_sections": 0,
+        "sections": 25,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 1299,
+      "decoded_sha256": "ba006dd808a00b6eb516b27d74c2a339c939bd408bef50918a1f659042002ee8",
+      "encoding": "gbk",
+      "name": "DefaultTGTankWeapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "0827657c232bd181418a60e71d8f60f37230862ca40d2697ee54b30cb24e5d28",
+      "source_bytes": 404,
+      "statistics": {
+        "assignments": 34,
+        "duplicate_keys": 2,
+        "repeated_sections": 0,
+        "sections": 4,
+        "unparsed_lines": 0
+      }
+    },
+    {
+      "container": "tgame-aes128ecb-zlib",
+      "decoded_bytes": 72050,
+      "decoded_sha256": "07dae33ac88ee5fb0361b89d948afaaa0502d3ed45c83b248220e0df736619fd",
+      "encoding": "gbk",
+      "name": "DefaultWeapon.ini",
+      "purpose": "weapon_rules",
+      "sha256": "d0af1aa6e33dec550caba2e9bb781c539fe6a7542be0e8b475de67932f99acdd",
+      "source_bytes": 9012,
+      "statistics": {
+        "assignments": 1612,
+        "duplicate_keys": 2,
+        "repeated_sections": 22,
+        "sections": 521,
+        "unparsed_lines": 0
+      }
+    }
+  ],
+  "statistics": {
+    "decoded_bytes": 913574,
+    "maps": 88,
+    "modes": 33,
+    "prefixes": 40,
+    "rule_assignments": 5099,
+    "rule_documents": 12,
+    "rule_sections": 710,
+    "rule_unparsed_lines": 0,
+    "source_bytes": 113140,
+    "source_files": 13
+  }
+}

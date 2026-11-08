@@ -1,0 +1,35 @@
+<Project>
+  <!-- Deployment settings are operator-owned. Publishing must preserve existing configuration. -->
+  <Target Name="PreserveExistingDeploymentConfiguration" AfterTargets="ComputeFilesToPublish">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+        Condition="('%(ResolvedFileToPublish.RelativePath)' == 'appsettings.json' Or '%(ResolvedFileToPublish.RelativePath)' == 'config.json') And Exists('$(PublishDir)%(ResolvedFileToPublish.RelativePath)')" />
+    </ItemGroup>
+  </Target>
+
+  <!-- A GUI host references its console engine. Keep that reference's apphost out of the shared AOT deployment. -->
+  <Target Name="ExcludeManagedPublishArtifacts" AfterTargets="ComputeFilesToPublish" Condition="'$(PublishAot)' == 'true'">
+    <ItemGroup>
+      <ResolvedFileToPublish Remove="@(ResolvedFileToPublish)"
+        Condition="'%(ResolvedFileToPublish.Extension)' == '.pdb'
+          Or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').EndsWith('.runtimeconfig.json'))
+          Or $([System.String]::Copy('%(ResolvedFileToPublish.RelativePath)').EndsWith('.deps.json'))
+          Or (('%(ResolvedFileToPublish.RelativePath)' == 'AFServer.exe' Or '%(ResolvedFileToPublish.RelativePath)' == 'AFConnect.exe')
+            And '%(ResolvedFileToPublish.Filename)' != '$(AssemblyName)')" />
+    </ItemGroup>
+  </Target>
+
+  <!-- .NET's incremental publish cleanup also needs these paths, even when no copy is scheduled. -->
+  <Target Name="RetainSharedDeploymentFiles" AfterTargets="_GetCurrentAndPriorPublishFileWrites">
+    <ItemGroup>
+      <_CurrentPublishFileWrites Include="$(_NormalizedPublishDir)appsettings.json"
+        Condition="Exists('$(_NormalizedPublishDir)appsettings.json')" />
+      <_CurrentPublishFileWrites Include="$(_NormalizedPublishDir)config.json"
+        Condition="Exists('$(_NormalizedPublishDir)config.json')" />
+      <_CurrentPublishFileWrites Include="$(_NormalizedPublishDir)AFServer.exe"
+        Condition="Exists('$(_NormalizedPublishDir)AFServer.exe')" />
+      <_CurrentPublishFileWrites Include="$(_NormalizedPublishDir)AFConnect.exe"
+        Condition="Exists('$(_NormalizedPublishDir)AFConnect.exe')" />
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>AFConnect</AssemblyName>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishAot>true</PublishAot>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../AFConnect.Proxy/AFConnect.Proxy.csproj" />
+    <Compile Include="../../AFServer/AFServer/Protocol/**/*.cs" Link="Protocol/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="../../AFServer/AFServer/Networking/Authentication/NativeTicketKeyResolver.cs" Link="Client/NativeTicketKeyResolver.cs" />
+    <Compile Include="../../AFServer/AFServer/Networking/Game/TGameConnection.cs" Link="Protocol/TGameConnection.cs" />
+    <Compile Include="../../AFServer/AFServer/Networking/Launcher/LauncherConnections.cs" Link="Protocol/LauncherConnections.cs" />
+    <Content Include="config.json" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="../../AFServer/AFServer/Game/Commerce/catalog.seed.json" LogicalName="AFConnect.ShopCatalog" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AFConnect.Launcher/AFConnect.Launcher.csproj" />
+  <Project Path="AFConnect.Edge/AFConnect.Edge.csproj" />
+  <Project Path="AFConnect.Proxy/AFConnect.Proxy.csproj" />
+</Solution>

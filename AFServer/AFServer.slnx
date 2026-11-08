@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AFServer/AFServer.csproj" />
+  <Folder Name="/Dependencies/">
+    <Project Path="../AFConnect/AFConnect.Proxy/AFConnect.Proxy.csproj" />
+  </Folder>
+</Solution>

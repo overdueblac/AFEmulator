@@ -1,0 +1,104 @@
+<Styles xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Styles.Resources>
+        <SolidColorBrush x:Key="Dim" Color="#A16E36" />
+        <SolidColorBrush x:Key="Line" Color="#684019" />
+        <SolidColorBrush x:Key="Hot" Color="#FFC77D" />
+        <SolidColorBrush x:Key="Green" Color="#8BD8AA" />
+    </Styles.Resources>
+    <Style Selector="TextBlock"><Setter Property="LineHeight" Value="15" /></Style>
+    <Style Selector="AccessText"><Setter Property="LineHeight" Value="15" /></Style>
+    <Style Selector="Button">
+        <Setter Property="Foreground" Value="#EBAA59" />
+        <Setter Property="Background" Value="#160E07" />
+        <Setter Property="BorderBrush" Value="#80501D" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="16,9" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Name="Frame" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
+                    <ContentPresenter Name="PART_ContentPresenter" Content="{TemplateBinding Content}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="Button:pointerover /template/ Border#Frame"><Setter Property="Background" Value="#38200B" /></Style>
+    <Style Selector="Button:pointerover"><Setter Property="Foreground" Value="#FFDC9C" /></Style>
+    <Style Selector="Button:focus /template/ Border#Frame"><Setter Property="BorderBrush" Value="#FFC77D" /></Style>
+    <Style Selector="Button:pressed /template/ Border#Frame"><Setter Property="Background" Value="#593011" /></Style>
+    <Style Selector="Button.action AccessText"><Setter Property="LineHeight" Value="20" /></Style>
+    <Style Selector="Button.diagnostic AccessText"><Setter Property="LineHeight" Value="22" /></Style>
+    <Style Selector="Button:disabled"><Setter Property="Foreground" Value="#AA916F" /><Setter Property="Cursor" Value="Arrow" /></Style>
+    <Style Selector="Button:disabled /template/ Border#Frame"><Setter Property="Background" Value="#160F09" /><Setter Property="BorderBrush" Value="#574025" /></Style>
+    <Style Selector="Button.action"><Setter Property="FontFamily" Value="Microsoft YaHei UI" /><Setter Property="FontSize" Value="14" /><Setter Property="MinHeight" Value="40" /><Setter Property="Padding" Value="16,7" /></Style>
+    <Style Selector="TextBox">
+        <Setter Property="Foreground" Value="#EBAA59" /><Setter Property="Background" Value="#0B0805" />
+        <Setter Property="BorderBrush" Value="#684019" /><Setter Property="CaretBrush" Value="#FFC77D" />
+        <Setter Property="SelectionBrush" Value="#80501D" /><Setter Property="Padding" Value="10" />
+        <Setter Property="CornerRadius" Value="0" />
+        <Setter Property="LineHeight" Value="15" />
+    </Style>
+    <Style Selector="TextBox.log">
+        <Setter Property="IsReadOnly" Value="True" /><Setter Property="AcceptsReturn" Value="True" />
+        <Setter Property="TextWrapping" Value="NoWrap" /><Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Background" Value="Transparent" /><Setter Property="FontSize" Value="12.5" />
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto" /><Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+        <Setter Property="Padding" Value="0,12,12,8" />
+        <Setter Property="LineHeight" Value="15" />
+    </Style>
+    <Style Selector="TextBox.path"><Setter Property="Height" Value="37" /></Style>
+    <Style Selector="CheckBox"><Setter Property="Foreground" Value="#B58A52" /><Setter Property="VerticalAlignment" Value="Center" /><Setter Property="MinHeight" Value="0" /></Style>
+    <Style Selector="CheckBox">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid ColumnDefinitions="20,*">
+                    <Border Width="13" Height="13" Margin="1,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#F4F4F4" BorderBrush="#777777" BorderThickness="1">
+                        <Path Name="CheckMark" Data="M 1,5 L 4,8 L 10,1" Stroke="#474747" StrokeThickness="2" IsVisible="False" />
+                    </Border>
+                    <ContentPresenter Name="PART_ContentPresenter" Grid.Column="1" Content="{TemplateBinding Content}" VerticalAlignment="Center" />
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="CheckBox:checked /template/ Path#CheckMark"><Setter Property="IsVisible" Value="True" /></Style>
+    <Style Selector="ScrollBar:vertical, ScrollBar:horizontal">
+        <Setter Property="Background" Value="#140D07" /><Setter Property="MinWidth" Value="0" /><Setter Property="MinHeight" Value="0" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Background="{TemplateBinding Background}">
+                    <Track Name="PART_Track" Orientation="{TemplateBinding Orientation}" Minimum="{TemplateBinding Minimum}" Maximum="{TemplateBinding Maximum}"
+                           Value="{TemplateBinding Value, Mode=TwoWay}" ViewportSize="{TemplateBinding ViewportSize}">
+                        <Track.DecreaseButton><RepeatButton Name="PART_PageUpButton" Focusable="False"><RepeatButton.Template><ControlTemplate><Border Background="#140D07" /></ControlTemplate></RepeatButton.Template></RepeatButton></Track.DecreaseButton>
+                        <Track.IncreaseButton><RepeatButton Name="PART_PageDownButton" Focusable="False"><RepeatButton.Template><ControlTemplate><Border Background="#140D07" /></ControlTemplate></RepeatButton.Template></RepeatButton></Track.IncreaseButton>
+                        <Thumb><Thumb.Template><ControlTemplate><Border Background="#69411F" BorderBrush="#AE7437" BorderThickness="1" Margin="1" /></ControlTemplate></Thumb.Template></Thumb>
+                    </Track>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="ScrollBar:vertical /template/ Track#PART_Track"><Setter Property="IsDirectionReversed" Value="True" /></Style>
+    <Style Selector="ScrollBar:vertical"><Setter Property="Width" Value="10" /></Style>
+    <Style Selector="ScrollBar:horizontal"><Setter Property="Height" Value="10" /></Style>
+    <Style Selector="ScrollBar /template/ Thumb"><Setter Property="Background" Value="#69411F" /><Setter Property="BorderBrush" Value="#AE7437" /><Setter Property="BorderThickness" Value="1" /></Style>
+    <Style Selector="TabItem">
+        <Setter Property="Width" Value="127" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="Foreground" Value="#A57740" /><Setter Property="Padding" Value="20,12" />
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Name="Tab" BorderThickness="0,0,0,2" BorderBrush="Transparent" Padding="{TemplateBinding Padding}" Background="{TemplateBinding Background}">
+                    <TextBlock Text="{TemplateBinding Header}" LineHeight="15" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+    <Style Selector="TabItem /template/ TextBlock"><Setter Property="LineHeight" Value="15" /></Style>
+    <Style Selector="TabItem:selected"><Setter Property="Foreground" Value="#FFC77D" /><Setter Property="Background" Value="#211407" /></Style>
+    <Style Selector="TabItem:selected /template/ Border#Tab"><Setter Property="BorderBrush" Value="#FFAD43" /></Style>
+    <Style Selector="TabItem:pointerover"><Setter Property="Foreground" Value="#FFD69A" /></Style>
+    <Style Selector="Button.link"><Setter Property="Foreground" Value="#8BD8AA" /><Setter Property="Background" Value="Transparent" /><Setter Property="BorderThickness" Value="0" /><Setter Property="Padding" Value="0" /><Setter Property="HorizontalAlignment" Value="Left" /></Style>
+</Styles>

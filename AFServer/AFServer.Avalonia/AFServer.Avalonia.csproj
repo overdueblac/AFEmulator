@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PublishAot>true</PublishAot>
+    <IlcTreatWarningsAsErrors>false</IlcTreatWarningsAsErrors>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <Product>AFEmulator Server</Product>
+    <AssemblyTitle>AFEmulator Server Console</AssemblyTitle>
+    <Company>AFEmulator</Company>
+    <Description>Server console for the Philippine AF2014 client</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia.Desktop" Version="11.3.22" />
+    <PackageReference Include="Avalonia.Themes.Simple" Version="11.3.22" />
+    <ProjectReference Include="../AFServer.Desktop.Core/AFServer.Desktop.Core.csproj" />
+    <InternalsVisibleTo Include="Desktop.NativeChecks" />
+  </ItemGroup>
+</Project>

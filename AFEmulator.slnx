@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Server (AFServer)/">
+    <Project Path="AFServer/AFServer/AFServer.csproj" />
+    <Project Path="AFServer/AFServer.Avalonia/AFServer.Avalonia.csproj" />
+    <Project Path="AFServer/AFServer.Desktop.Core/AFServer.Desktop.Core.csproj" />
+  </Folder>
+  <Folder Name="/Connect (AFConnect)/">
+    <Project Path="AFConnect/AFConnect.Launcher/AFConnect.Launcher.csproj" />
+    <Project Path="AFConnect/AFConnect.Edge/AFConnect.Edge.csproj" />
+    <Project Path="AFConnect/AFConnect.Proxy/AFConnect.Proxy.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,78 @@
+# Local development resources, including the game client
+/[Dd]evelop/
+
+# Local executable delivery and shared client resources
+/[Rr]unning/
+
+# Build and publish output
+**/[Bb]in/
+**/[Oo]bj/
+artifacts/
+build/
+dist/
+__pycache__/
+*.py[cod]
+
+# Secrets / credentials
+*.pem
+*.PEM
+*.key
+*.KEY
+*.pfx
+*.PFX
+*.p12
+*.P12
+.env
+.env.*
+secrets/
+private/
+
+# Local player/account/runtime state
+*player_state*.json
+*account_state*.json
+*profile_state*.json
+*clan_state*.json
+*.sqlite
+*.sqlite3
+*.db
+
+# Local/generated mappings
+generated/
+shop_item_map.json
+
+# Logs / captures / dumps
+*.log
+*.dmp
+*.dump
+*.pcap
+*.pcapng
+logs/
+captures/
+dumps/
+runtime/
+
+# Game/client files and generated binaries
+*.exe
+*.dll
+*.sys
+*.upk
+*.udk
+*.u
+*.tfc
+*.pak
+*.tpf
+*.zip
+*.7z
+*.rar
+*.bin
+*.dat
+*.bak
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+.DS_Store
+Thumbs.db

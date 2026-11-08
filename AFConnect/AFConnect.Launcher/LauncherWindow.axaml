@@ -1,0 +1,169 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:AFConnect.Launcher" x:Class="AFConnect.Launcher.LauncherWindow"
+        Title="AF2014 · 启动器" Width="1250" Height="750" MinWidth="1050" MinHeight="630"
+        SystemDecorations="None" WindowStartupLocation="CenterScreen">
+  <Window.Styles>
+    <Style Selector="TextBlock.technical">
+      <Setter Property="FontFamily" Value="Bahnschrift, Microsoft YaHei" />
+    </Style>
+    <Style Selector="Button.access">
+      <Setter Property="Padding" Value="26,13" />
+      <Setter Property="BorderBrush" Value="#0A0A0A" />
+      <Setter Property="BorderThickness" Value="1.5" />
+      <Setter Property="MinHeight" Value="48" />
+    </Style>
+    <Style Selector="Button.access:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="#0A0A0A" />
+      <Setter Property="Foreground" Value="White" />
+    </Style>
+    <Style Selector="Button.access:focus-visible /template/ ContentPresenter">
+      <Setter Property="BorderBrush" Value="#FF7500" />
+    </Style>
+  </Window.Styles>
+  <Border BorderBrush="#BDBAB4" BorderThickness="1">
+    <Border.Background>
+      <LinearGradientBrush StartPoint="0%,100%" EndPoint="85%,0%">
+        <GradientStop Color="#E5E3DF" Offset="0" />
+        <GradientStop Color="#E5E3DF" Offset="0.5" />
+        <GradientStop Color="#F5F3EF" Offset="1" />
+      </LinearGradientBrush>
+    </Border.Background>
+    <Viewbox Stretch="Uniform">
+      <Grid Width="1250" Height="750" ClipToBounds="True">
+        <local:LauncherBackdrop x:Name="Backdrop" IsHitTestVisible="False" />
+        <Canvas x:Name="SequencePanel">
+          <StackPanel Canvas.Left="46" Canvas.Top="44" Spacing="3">
+            <TextBlock Classes="technical" Text="AF2014" FontSize="33" FontWeight="Bold" />
+            <TextBlock Classes="technical" Text="SYNTHESIZE INTELLIGENCE" FontSize="15" FontWeight="Bold" />
+          </StackPanel>
+          <StackPanel Canvas.Left="46" Canvas.Top="156" Orientation="Horizontal" Spacing="14">
+            <TextBlock Classes="mono" Text="AF2014 / ACCESS SYSTEM" FontSize="10" LetterSpacing="1.2" />
+            <TextBlock x:Name="ClockText" Classes="mono" Foreground="#FF7500" FontSize="10" LetterSpacing="1" />
+          </StackPanel>
+          <StackPanel x:Name="CenterStage" Canvas.Left="225" Canvas.Top="275" Width="800" Spacing="14">
+            <StackPanel Orientation="Horizontal" Spacing="14" HorizontalAlignment="Center">
+              <TextBlock x:Name="StatusHeading" Text="需要访问许可" FontFamily="Microsoft YaHei" FontSize="40" LetterSpacing="8" />
+              <Border x:Name="StatusCaret" Width="15" Height="4" Background="#FF7500" VerticalAlignment="Center" Margin="0,9,0,0" />
+            </StackPanel>
+            <TextBlock x:Name="StatusEnglish" Classes="mono" Text="ACCESS PERMISSION REQUIRED" FontSize="13" LetterSpacing="4.5" HorizontalAlignment="Center" Foreground="#3A3936" />
+            <Border Width="454" Height="1" Background="#290A0A0A" Margin="0,8,0,0" />
+            <local:LauncherMark x:Name="StageMark" Width="112" Height="55" HorizontalAlignment="Center" Opacity="0.45" IsVisible="False" Margin="0,6,0,0" />
+          </StackPanel>
+          <StackPanel x:Name="ActionPanel" Canvas.Left="415" Canvas.Top="425" Width="420" Spacing="12">
+            <Border x:Name="IdentityCard" Width="360" BorderBrush="#290A0A0A" BorderThickness="0,1" Padding="2,0" IsVisible="False">
+              <StackPanel>
+                <Grid ColumnDefinitions="Auto,*" Margin="0,9">
+                  <TextBlock Text="身份编号" Classes="muted" FontSize="12" LetterSpacing="1.5" />
+                  <TextBlock x:Name="IdentityText" Grid.Column="1" Text="等待核验" FontSize="15" FontFamily="Bahnschrift" FontWeight="Bold" HorizontalAlignment="Right" />
+                </Grid>
+                <Border Height="1" Background="#120A0A0A" />
+                <Grid ColumnDefinitions="Auto,*" Margin="0,9">
+                  <TextBlock Text="连接地址" Classes="muted" FontSize="12" LetterSpacing="1.5" />
+                  <TextBlock x:Name="EndpointText" Grid.Column="1" Text="读取连接配置…" FontFamily="Consolas" FontSize="14" HorizontalAlignment="Right" />
+                </Grid>
+                <Border Height="1" Background="#120A0A0A" />
+                <Grid ColumnDefinitions="Auto,*" Margin="0,9">
+                  <TextBlock Text="可用区服" Classes="muted" FontSize="12" LetterSpacing="1.5" />
+                  <TextBlock x:Name="RegionCountText" Grid.Column="1" FontSize="15" FontFamily="Bahnschrift" FontWeight="Bold" HorizontalAlignment="Right" />
+                </Grid>
+              </StackPanel>
+            </Border>
+            <Button x:Name="PrimaryButton" Classes="access" HorizontalAlignment="Center">
+              <StackPanel Orientation="Horizontal" Spacing="14">
+                <TextBlock x:Name="PrimaryCaption" Text="开始登陆游戏" FontSize="15" LetterSpacing="1.5" />
+                <TextBlock x:Name="PrimaryEnglish" Text="START LOGIN" FontFamily="Consolas" FontSize="11" LetterSpacing="2" Opacity="0.65" VerticalAlignment="Center" />
+              </StackPanel>
+            </Button>
+            <TextBlock x:Name="ActionHint" Text="点击继续，或按 Enter 开始登陆" Classes="muted" FontSize="11" LetterSpacing="1" HorizontalAlignment="Center" />
+            <Button x:Name="SequenceCancelButton" Classes="chrome" Content="取消操作" IsVisible="False" HorizontalAlignment="Center" Padding="12,4" FontSize="11" />
+          </StackPanel>
+          <StackPanel x:Name="WelcomePanel" Canvas.Left="265" Canvas.Top="221" Width="720" IsVisible="False">
+            <TextBlock Classes="technical" Text="WELCOME TO" FontSize="40" FontWeight="Bold" LetterSpacing="8" HorizontalAlignment="Center" />
+            <Border Background="#0A0A0A" HorizontalAlignment="Center" Padding="16,7,12,8" Margin="0,12,0,0">
+              <TextBlock Classes="technical" Text="AF2014" Foreground="White" FontSize="27" FontWeight="Bold" LetterSpacing="4" />
+            </Border>
+            <local:LauncherMark Width="156" Height="76" HorizontalAlignment="Center" Margin="0,30,0,0" />
+            <TextBlock Classes="mono" Text="A F 2 0 1 4" FontSize="10" LetterSpacing="4" HorizontalAlignment="Center" Margin="0,10,0,0" />
+            <TextBlock x:Name="WelcomeIdentity" FontSize="15" LetterSpacing="3" HorizontalAlignment="Center" Margin="0,20,0,0" />
+          </StackPanel>
+          <TextBlock x:Name="StepLabel" Canvas.Left="46" Canvas.Top="689" Classes="mono" Text="[ 00 / 06 ] AUTHORIZATION" FontSize="10" LetterSpacing="1.4" />
+          <StackPanel Canvas.Left="345" Canvas.Top="647" Width="560" Spacing="6">
+            <TextBlock x:Name="StageText" Text="等待开始登陆…" FontSize="15" Foreground="#3A3936" TextAlignment="Center" TextWrapping="Wrap" />
+            <TextBlock x:Name="SubtitleEnglish" Classes="mono" Text="AWAITING GAME LOGIN" FontSize="9.5" LetterSpacing="2.2" TextAlignment="Center" />
+          </StackPanel>
+          <StackPanel Canvas.Right="46" Canvas.Top="689" Orientation="Horizontal" Spacing="10">
+            <TextBlock Classes="mono" Text="POWERED BY AF2014" FontSize="10" Foreground="#0A0A0A" LetterSpacing="1.5" />
+            <Border Width="26" Height="7" Background="#0A0A0A" VerticalAlignment="Center" />
+          </StackPanel>
+          <ProgressBar x:Name="Progress" Canvas.Left="452" Canvas.Top="736" Width="346" Height="3" MinHeight="3" Minimum="0" Maximum="6" Value="0" Foreground="#0A0A0A" Background="#120A0A0A" />
+        </Canvas>
+        <Grid x:Name="PortalPanel" RowDefinitions="Auto,*,Auto" Margin="48,36" IsVisible="False">
+          <StackPanel Orientation="Horizontal" Spacing="14">
+            <local:LauncherMark Width="62" Height="30" />
+            <TextBlock Text="AF2014" Classes="technical" FontSize="16" LetterSpacing="1.3" VerticalAlignment="Center" />
+          </StackPanel>
+          <StackPanel Grid.Row="1" Width="760" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="ACCESS GRANTED / 访问已授权" Classes="mono" Foreground="#FF7500" LetterSpacing="2" />
+            <TextBlock x:Name="PortalHeading" Text="欢迎回来" Classes="technical" FontSize="44" Margin="0,24,0,16" />
+            <TextBlock x:Name="SessionText" Text="登录验证完成，你的会话已准备就绪。" Foreground="#7A7873" FontSize="14" TextWrapping="Wrap" />
+            <Border BorderBrush="#290A0A0A" BorderThickness="0,1" Padding="0,22" Margin="0,36,0,30">
+              <Grid ColumnDefinitions="230,200,*">
+                <StackPanel Spacing="10">
+                  <TextBlock Text="连接地址" Classes="muted" FontSize="11" LetterSpacing="1" />
+                  <TextBlock x:Name="PortalEndpoint" FontFamily="Consolas" FontSize="17" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Spacing="10">
+                  <TextBlock Text="身份编号" Classes="muted" FontSize="11" LetterSpacing="1" />
+                  <TextBlock x:Name="PortalIdentity" Classes="technical" FontSize="18" />
+                </StackPanel>
+                <StackPanel Grid.Column="2" Spacing="10">
+                  <TextBlock Text="选择区服" Classes="muted" FontSize="11" LetterSpacing="1" />
+                  <ComboBox x:Name="ServerList" HorizontalAlignment="Stretch" IsEnabled="False" PlaceholderText="连接后获取区服列表" MinHeight="36" Padding="10,6" />
+                </StackPanel>
+              </Grid>
+            </Border>
+            <StackPanel Orientation="Horizontal" Spacing="12">
+              <Button x:Name="LaunchButton" Classes="primary" Content="启动游戏    ↗" MinWidth="160" />
+              <Button x:Name="DisconnectButton" Content="断开连接" IsEnabled="False" />
+              <Button x:Name="CancelMatchButton" Content="取消对局准备" IsEnabled="False" />
+            </StackPanel>
+          </StackPanel>
+          <Grid Grid.Row="2" ColumnDefinitions="*,Auto">
+            <TextBlock Text="AF2014" Classes="mono" LetterSpacing="1.4" />
+            <TextBlock Grid.Column="1" Text="POWERED BY AF2014" Classes="mono" LetterSpacing="1.4" />
+          </Grid>
+        </Grid>
+        <Border x:Name="TitleBar" Height="34" VerticalAlignment="Top" Background="Transparent" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,34,34,0" Spacing="4">
+          <TextBlock x:Name="OnlineLabel" Text="● SESSION ONLINE" Classes="mono" FontSize="10" VerticalAlignment="Center" Margin="0,0,12,0" IsVisible="False" />
+          <Button x:Name="SettingsButton" Classes="chrome" Content="设置" FontSize="11" />
+          <Button x:Name="ToolsButton" Classes="chrome" Content="工具" FontSize="11" />
+          <Button x:Name="DiagnosticsButton" Classes="chrome" Content="诊断" FontSize="11" />
+          <Button x:Name="SkipIntroButton" Classes="chrome" Content="SKIP ▸" IsVisible="False" FontFamily="Consolas" FontSize="11" />
+          <Button x:Name="MinimizeButton" Classes="chrome" Content="—" AutomationProperties.Name="最小化" />
+          <Button x:Name="CloseButton" Classes="chrome" Content="×" FontSize="18" AutomationProperties.Name="关闭启动器" />
+        </StackPanel>
+        <Border x:Name="IntroOverlay" Background="Black">
+          <StackPanel x:Name="IntroBrand" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0">
+            <local:LauncherMark Width="213" Height="104" Ink="White" HorizontalAlignment="Center" Margin="0,0,0,18" />
+            <TextBlock Text="AF2014" Classes="technical" FontSize="27" FontWeight="Bold" LetterSpacing="12" Foreground="White" HorizontalAlignment="Center" />
+            <TextBlock Text="AF2014" Classes="technical" FontSize="11" LetterSpacing="6" Foreground="#B8B5AE" HorizontalAlignment="Center" Margin="0,12,0,0" />
+          </StackPanel>
+        </Border>
+        <Button x:Name="IntroSkipButton" Content="SKIP ▸" Classes="chrome" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,34,46,0" FontFamily="Consolas" FontSize="11" />
+        <Border x:Name="WashOverlay" Background="White" Opacity="0" IsHitTestVisible="False" />
+        <Border x:Name="DiagnosticsPanel" Width="900" Height="290" VerticalAlignment="Bottom" Margin="0,0,0,92" Padding="24,16" Background="#F5F3EF" BorderBrush="#BDBAB4" BorderThickness="1" IsVisible="False">
+          <Grid RowDefinitions="Auto,*">
+            <Grid ColumnDefinitions="*,Auto">
+              <TextBlock Text="连接诊断 / CONNECTION JOURNAL" Classes="mono" VerticalAlignment="Center" />
+              <Button x:Name="CloseDiagnosticsButton" Classes="chrome" Content="关闭 ×" Padding="8,4" />
+            </Grid>
+            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled" Margin="0,12,0,0">
+              <TextBlock x:Name="Journal" FontFamily="Consolas, Microsoft YaHei UI" FontSize="11" TextWrapping="Wrap" />
+            </ScrollViewer>
+          </Grid>
+        </Border>
+      </Grid>
+    </Viewbox>
+  </Border>
+</Window>

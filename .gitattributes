@@ -1,0 +1,12 @@
+# Normalize ordinary text files using Git defaults.
+* text=auto
+
+# These JSON files are validated byte-for-byte against the native data manifest.
+AFServer/AFServer/data/native/*.json text eol=lf
+
+# Keep public documentation and project metadata consistent across checkouts.
+*.md text eol=lf
+*.slnx text eol=lf
+*.csproj text eol=lf
+*.pubxml text eol=lf
+*.targets text eol=lf

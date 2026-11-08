@@ -1,0 +1,1427 @@
+{
+  "kind": "configuration_map_directory",
+  "maps": [
+    {
+      "display_name": "UTFrontEnd",
+      "map_id": 0,
+      "map_name": "UTFrontEnd",
+      "operation": "+",
+      "raw_value": "(MapId=0,\tNickName=\"UTFrontEnd\",\tMapName=\"UTFrontEnd\")",
+      "source_line": 289,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "训练场",
+      "map_id": 1,
+      "map_name": "Tutorial_Main",
+      "operation": "+",
+      "raw_value": "(MapId=1, \tNickName=\"训练场\",\tMapName=\"Tutorial_Main\")",
+      "source_line": 290,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "海滨小镇",
+      "map_id": 2,
+      "map_name": "Seashore_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=2, \tNickName=\"海滨小镇\",\tMapName=\"Seashore_1_Main\")",
+      "source_line": 291,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "航空母舰",
+      "map_id": 3,
+      "map_name": "Ship_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=3, \tNickName=\"航空母舰\",\tMapName=\"Ship_4_Main\")",
+      "source_line": 292,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "货轮",
+      "map_id": 4,
+      "map_name": "Ship2_Main",
+      "operation": "+",
+      "raw_value": "(MapId=4, \tNickName=\"货轮\",\tMapName=\"Ship2_Main\")",
+      "source_line": 293,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "下水道",
+      "map_id": 5,
+      "map_name": "Knife_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=5, \tNickName=\"下水道\",\tMapName=\"Knife_1_Main\")",
+      "source_line": 294,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "仓库4",
+      "map_id": 6,
+      "map_name": "Factory_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=6, \tNickName=\"仓库4\",\tMapName=\"Factory_4_Main\")",
+      "source_line": 295,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "装配中心",
+      "map_id": 7,
+      "map_name": "Factory_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=7, \tNickName=\"装配中心\",\tMapName=\"Factory_1_Main\")",
+      "source_line": 296,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "伦敦",
+      "map_id": 8,
+      "map_name": "Capital_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=8,  \tNickName=\"伦敦\",\tMapName=\"Capital_1_Main\")",
+      "source_line": 297,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "13号工厂",
+      "map_id": 9,
+      "map_name": "Factory_13_Main",
+      "operation": "+",
+      "raw_value": "(MapId=9,  \tNickName=\"13号工厂\",\tMapName=\"Factory_13_Main\")",
+      "source_line": 298,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "神庙",
+      "map_id": 14,
+      "map_name": "Maya_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=14, \tNickName=\"神庙\",\tMapName=\"Maya_1_Main\")",
+      "source_line": 301,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "钢铁森林",
+      "map_id": 16,
+      "map_name": "Factory_3_Main",
+      "operation": "+",
+      "raw_value": "(MapId=16, \tNickName=\"钢铁森林\",\tMapName=\"Factory_3_Main\")",
+      "source_line": 303,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "个人战",
+      "map_id": 17,
+      "map_name": "Seashore_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=17, \tNickName=\"个人战\",\tMapName=\"Seashore_1_Main\")",
+      "source_line": 304,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "油井",
+      "map_id": 18,
+      "map_name": "Factory_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=18, \tNickName=\"油井\",\tMapName=\"Factory_5_Main\")",
+      "source_line": 305,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "码头",
+      "map_id": 19,
+      "map_name": "Ship_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=19, \tNickName=\"码头\",\tMapName=\"Ship_5_Main\")",
+      "source_line": 306,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "航母手枪战",
+      "map_id": 21,
+      "map_name": "Ship_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=21, \tNickName=\"航母手枪战\",\tMapName=\"Ship_4_Main\")",
+      "source_line": 308,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "监狱",
+      "map_id": 22,
+      "map_name": "Factory_7_Main",
+      "operation": "+",
+      "raw_value": "(MapId=22, \tNickName=\"监狱\",\tMapName=\"Factory_7_Main\")",
+      "source_line": 309,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "液压车间",
+      "map_id": 24,
+      "map_name": "Knife_2_Main",
+      "operation": "+",
+      "raw_value": "(MapId=24, \tNickName=\"液压车间\",\tMapName=\"Knife_2_Main\")",
+      "source_line": 310,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "风暴峡谷",
+      "map_id": 25,
+      "map_name": "Canyon_Main",
+      "operation": "+",
+      "raw_value": "(MapId=25, \tNickName=\"风暴峡谷\",\tMapName=\"Canyon_Main\")",
+      "source_line": 311,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "团队单挑",
+      "map_id": 28,
+      "map_name": "TM-Tutorial_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=28, \tNickName=\"团队单挑\",\tMapName=\"TM-Tutorial_1_Main\")",
+      "source_line": 312,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "雪山前哨",
+      "map_id": 30,
+      "map_name": "TM-Knife_3_Main",
+      "operation": "+",
+      "raw_value": "(MapId=30, \tNickName=\"雪山前哨\",\tMapName=\"TM-Knife_3_Main\")",
+      "source_line": 314,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "死亡工地",
+      "map_id": 32,
+      "map_name": "IM-Factory18_Main",
+      "operation": "+",
+      "raw_value": "(MapId=32, \tNickName=\"死亡工地\",\tMapName=\"IM-Factory18_Main\")",
+      "source_line": 315,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "杀戮都市",
+      "map_id": 33,
+      "map_name": "TM-Factory19_Main",
+      "operation": "+",
+      "raw_value": "(MapId=33, \tNickName=\"杀戮都市\",\tMapName=\"TM-Factory19_Main\")",
+      "source_line": 316,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "荒野对战",
+      "map_id": 34,
+      "map_name": "TTM-Tank_01_Main",
+      "operation": "+",
+      "raw_value": "(MapId=34, \tNickName=\"荒野对战\",\tMapName=\"TTM-Tank_01_Main\")",
+      "source_line": 317,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "疯狂团队",
+      "map_id": 35,
+      "map_name": "CTM-Seashore_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=35, \tNickName=\"疯狂团队\",\tMapName=\"CTM-Seashore_6_Main\")",
+      "source_line": 318,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "广场废墟",
+      "map_id": 36,
+      "map_name": "MHM-Capital3_Main",
+      "operation": "+",
+      "raw_value": "(MapId=36, \tNickName=\"广场废墟\",\tMapName=\"MHM-Capital3_Main\")",
+      "source_line": 319,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "停车场",
+      "map_id": 37,
+      "map_name": "TM-Factory_10_Main",
+      "operation": "+",
+      "raw_value": "(MapId=37, \tNickName=\"停车场\",\tMapName=\"TM-Factory_10_Main\")",
+      "source_line": 320,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "寒冰要塞",
+      "map_id": 38,
+      "map_name": "TM-Grenade_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=38, \tNickName=\"寒冰要塞\",\tMapName=\"TM-Grenade_1_Main\")",
+      "source_line": 321,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "魔都惊魂",
+      "map_id": 39,
+      "map_name": "Bio-Capital_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=39, \tNickName=\"魔都惊魂\",\tMapName=\"Bio-Capital_4_Main\")",
+      "source_line": 323,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "斗兽场",
+      "map_id": 40,
+      "map_name": "IM-Knife_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=40, \tNickName=\"斗兽场\",\tMapName=\"IM-Knife_4_Main\")",
+      "source_line": 324,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "玛雅花园",
+      "map_id": 42,
+      "map_name": "TM-Maya_2_Main",
+      "operation": "+",
+      "raw_value": "(MapId=42, \tNickName=\"玛雅花园\",\tMapName=\"TM-Maya_2_Main\")",
+      "source_line": 325,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "跨海大桥",
+      "map_id": 43,
+      "map_name": "TM-Capital_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=43, \tNickName=\"跨海大桥\",\tMapName=\"TM-Capital_6_Main\")",
+      "source_line": 326,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "荒野攻防",
+      "map_id": 44,
+      "map_name": "TDB-Tank_02_Main",
+      "operation": "+",
+      "raw_value": "(MapId=44, \tNickName=\"荒野攻防\",\tMapName=\"TDB-Tank_02_Main\")",
+      "source_line": 327,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "火车",
+      "map_id": 45,
+      "map_name": "BM-Capital_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=45, \tNickName=\"火车\",\tMapName=\"BM-Capital_5_Main\")",
+      "source_line": 328,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "祭坛",
+      "map_id": 47,
+      "map_name": "SV-Maya_3_Main",
+      "operation": "+",
+      "raw_value": "(MapId=47, \tNickName=\"祭坛\",\tMapName=\"SV-Maya_3_Main\")",
+      "source_line": 329,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "造船厂",
+      "map_id": 49,
+      "map_name": "MHM-Factory_20_Main",
+      "operation": "+",
+      "raw_value": "(MapId=49, \tNickName=\"造船厂\",\tMapName=\"MHM-Factory_20_Main\")",
+      "source_line": 330,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "重力实验室",
+      "map_id": 50,
+      "map_name": "TM-Knife_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=50, \tNickName=\"重力实验室\",\tMapName=\"TM-Knife_5_Main\")",
+      "source_line": 331,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "天使城2033",
+      "map_id": 54,
+      "map_name": "MTM-Factory_100_Main",
+      "operation": "+",
+      "raw_value": "(MapId=54, \tNickName=\"天使城2033\",MapName=\"MTM-Factory_100_Main\")",
+      "source_line": 332,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "极地要塞",
+      "map_id": 55,
+      "map_name": "MHM-Factory_21_Main",
+      "operation": "+",
+      "raw_value": "(MapId=55, \tNickName=\"极地要塞\",\tMapName=\"MHM-Factory_21_Main\")",
+      "source_line": 333,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "矿山",
+      "map_id": 56,
+      "map_name": "TM-Maya_5_main",
+      "operation": "+",
+      "raw_value": "(MapId=56, \tNickName=\"矿山\",MapName=\"TM-Maya_5_main\")",
+      "source_line": 334,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "采石场",
+      "map_id": 57,
+      "map_name": "BM-Capital_9_Navart",
+      "operation": "+",
+      "raw_value": "(MapId=57, \tNickName=\"采石场\",MapName=\"BM-Capital_9_Navart\")",
+      "source_line": 335,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "炼油厂",
+      "map_id": 58,
+      "map_name": "BM-nuke_main",
+      "operation": "+",
+      "raw_value": "(MapId=58, \tNickName=\"炼油厂\",\tMapName=\"BM-nuke_main\")",
+      "source_line": 336,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "吊桥",
+      "map_id": 59,
+      "map_name": "BM-Maya_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=59, \tNickName=\"吊桥\",\tMapName=\"BM-Maya_4_Main\")",
+      "source_line": 337,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "考古基地",
+      "map_id": 60,
+      "map_name": "Bio-Maya_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=60, \tNickName=\"考古基地\",\tMapName=\"Bio-Maya_6_Main\")",
+      "source_line": 338,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "末日之眼",
+      "map_id": 61,
+      "map_name": "MDM-Factory_101_Main",
+      "operation": "+",
+      "raw_value": "(MapId=61, \tNickName=\"末日之眼\",\tMapName=\"MDM-Factory_101_Main\")",
+      "source_line": 339,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "21区",
+      "map_id": 62,
+      "map_name": "BM-Tutorial_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=62, \tNickName=\"21区\",\tMapName=\"BM-Tutorial_4_Main\")",
+      "source_line": 340,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "藏匿之地",
+      "map_id": 63,
+      "map_name": "LD-Tutorial_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=63, \tNickName=\"藏匿之地\",\tMapName=\"LD-Tutorial_5_Main\")",
+      "source_line": 341,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "赤色要塞",
+      "map_id": 64,
+      "map_name": "BM-Tuscan_Main",
+      "operation": "+",
+      "raw_value": "(MapId=64, \tNickName=\"赤色要塞\",\tMapName=\"BM-Tuscan_Main\")",
+      "source_line": 342,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "海岛营地",
+      "map_id": 65,
+      "map_name": "TM-Seashore_8_Main",
+      "operation": "+",
+      "raw_value": "(MapId=65, \tNickName=\"海岛营地\",\tMapName=\"TM-Seashore_8_Main\")",
+      "source_line": 343,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "飞雪谷",
+      "map_id": 67,
+      "map_name": "AM-Factory_8_Main",
+      "operation": "+",
+      "raw_value": "(MapId=67, \tNickName=\"飞雪谷\",\tMapName=\"AM-Factory_8_Main\")",
+      "source_line": 344,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "希腊",
+      "map_id": 69,
+      "map_name": "BM-Seashore_9_Main",
+      "operation": "+",
+      "raw_value": "(MapId=69, \tNickName=\"希腊\",\tMapName=\"BM-Seashore_9_Main\")",
+      "source_line": 345,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "伦敦",
+      "map_id": 71,
+      "map_name": "BM-Capital_1_Main",
+      "operation": "+",
+      "raw_value": "(MapId=71,  \tNickName=\"伦敦\",\tMapName=\"BM-Capital_1_Main\")",
+      "source_line": 346,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "老城区",
+      "map_id": 72,
+      "map_name": "Bio2-Capital_12_Main",
+      "operation": "+",
+      "raw_value": "(MapId=72,  \tNickName=\"老城区\",\tMapName=\"Bio2-Capital_12_Main\")",
+      "source_line": 347,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "13号工厂",
+      "map_id": 73,
+      "map_name": "IM-Factory_13_Main",
+      "operation": "+",
+      "raw_value": "(MapId=73,  \tNickName=\"13号工厂\",\tMapName=\"IM-Factory_13_Main\")",
+      "source_line": 348,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "变异地带",
+      "map_id": 74,
+      "map_name": "Bio-Factory_22_Main",
+      "operation": "+",
+      "raw_value": "(MapId=74,  \tNickName=\"变异地带\",\tMapName=\"Bio-Factory_22_Main\")",
+      "source_line": 349,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "火车",
+      "map_id": 75,
+      "map_name": "BM-Capital_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=75, \tNickName=\"火车\",\tMapName=\"BM-Capital_5_Main\")",
+      "source_line": 350,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "仓储中心",
+      "map_id": 80,
+      "map_name": "BM-Factory_26_Main",
+      "operation": "+",
+      "raw_value": "(MapId=80, \tNickName=\"仓储中心\",\tMapName=\"BM-Factory_26_Main\")",
+      "source_line": 351,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "凯旋之地",
+      "map_id": 81,
+      "map_name": "MHM-Capital_14_Main",
+      "operation": "+",
+      "raw_value": "(MapId=81, \tNickName=\"凯旋之地\",\tMapName=\"MHM-Capital_14_Main\")",
+      "source_line": 352,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "弹药库",
+      "map_id": 82,
+      "map_name": "TM-Ship_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=82, \tNickName=\"弹药库\",\tMapName=\"TM-Ship_6_Main\")",
+      "source_line": 353,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "800秀",
+      "map_id": 84,
+      "map_name": "BM-Capital_15_Main",
+      "operation": "+",
+      "raw_value": "(MapId=84, \tNickName=\"800秀\",\tMapName=\"BM-Capital_15_Main\")",
+      "source_line": 354,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "燃料站",
+      "map_id": 86,
+      "map_name": "BM-Forge_Main",
+      "operation": "+",
+      "raw_value": "(MapId=86, \tNickName=\"燃料站\",\tMapName=\"BM-Forge_Main\")",
+      "source_line": 355,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "冰雪乐园",
+      "map_id": 88,
+      "map_name": "TM-Grenade_2_Main",
+      "operation": "+",
+      "raw_value": "(MapId=88, \tNickName=\"冰雪乐园\",\tMapName=\"TM-Grenade_2_Main\")",
+      "source_line": 357,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "D9研究所",
+      "map_id": 90,
+      "map_name": "TP-Factory_27_Main",
+      "operation": "+",
+      "raw_value": "(MapId=90, \tNickName=\"D9研究所\",\tMapName=\"TP-Factory_27_Main\")",
+      "source_line": 358,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "瀑布",
+      "map_id": 92,
+      "map_name": "TM-Knife_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=92, \tNickName=\"瀑布\",\tMapName=\"TM-Knife_6_Main\")",
+      "source_line": 359,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "X基地",
+      "map_id": 93,
+      "map_name": "TM-Tutorial_9_Main",
+      "operation": "+",
+      "raw_value": "(MapId=93, \tNickName=\"X基地\",\tMapName=\"TM-Tutorial_9_Main\")",
+      "source_line": 360,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "港口",
+      "map_id": 94,
+      "map_name": "TM-Ship7_Main",
+      "operation": "+",
+      "raw_value": "(MapId=94, \tNickName=\"港口\",\tMapName=\"TM-Ship7_Main\")",
+      "source_line": 362,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "星海虫影",
+      "map_id": 95,
+      "map_name": "IF2-Factory_83_main",
+      "operation": "+",
+      "raw_value": "(MapId=95, \tNickName=\"星海虫影\",\tMapName=\"IF2-Factory_83_main\")",
+      "source_line": 363,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "联盟大厦",
+      "map_id": 96,
+      "map_name": "ATD-Capital_17_Main",
+      "operation": "+",
+      "raw_value": "(MapId=96, \tNickName=\"联盟大厦\",\tMapName=\"ATD-Capital_17_Main\")",
+      "source_line": 364,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "艾玛塔城",
+      "map_id": 105,
+      "map_name": "TTM-Tank_03_Main",
+      "operation": "+",
+      "raw_value": "(MapId=105, \tNickName=\"艾玛塔城\",\tMapName=\"TTM-Tank_03_Main\")",
+      "source_line": 365,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "血腥突击",
+      "map_id": 107,
+      "map_name": "TM-Factory_28_Main",
+      "operation": "+",
+      "raw_value": "(MapId=107, \tNickName=\"血腥突击\",\tMapName=\"TM-Factory_28_Main\")",
+      "source_line": 366,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "工业园",
+      "map_id": 108,
+      "map_name": "BM-Factory_102_Main",
+      "operation": "+",
+      "raw_value": "(MapId=108, \tNickName=\"工业园\",\tMapName=\"BM-Factory_102_Main\")",
+      "source_line": 367,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "血腥突击",
+      "map_id": 110,
+      "map_name": "TM-Factory_28_Main",
+      "operation": "+",
+      "raw_value": "(MapId=110, \tNickName=\"血腥突击\",\tMapName=\"TM-Factory_28_Main\")",
+      "source_line": 368,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "研究中心",
+      "map_id": 114,
+      "map_name": "TM-Knife_7_Main",
+      "operation": "+",
+      "raw_value": "(MapId=114, \tNickName=\"研究中心\",\tMapName=\"TM-Knife_7_Main\")",
+      "source_line": 369,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "魔都惊魂",
+      "map_id": 115,
+      "map_name": "Bio2-Capital_4_Main",
+      "operation": "+",
+      "raw_value": "(MapId=115, \tNickName=\"魔都惊魂\",\tMapName=\"Bio2-Capital_4_Main\")",
+      "source_line": 370,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "变异地带",
+      "map_id": 116,
+      "map_name": "Bio2-Factory_22_Main",
+      "operation": "+",
+      "raw_value": "(MapId=116, \tNickName=\"变异地带\",\tMapName=\"Bio2-Factory_22_Main\")",
+      "source_line": 371,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "考古基地",
+      "map_id": 117,
+      "map_name": "Bio2-Maya_6_Main",
+      "operation": "+",
+      "raw_value": "(MapId=117, \tNickName=\"考古基地\",\tMapName=\"Bio2-Maya_6_Main\")",
+      "source_line": 372,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "老城区",
+      "map_id": 118,
+      "map_name": "Bio-Capital_12_Main",
+      "operation": "+",
+      "raw_value": "(MapId=118, \tNickName=\"老城区\",\tMapName=\"Bio-Capital_12_Main\")",
+      "source_line": 373,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "欢乐海岸",
+      "map_id": 122,
+      "map_name": "Bio-Maya_7_Main",
+      "operation": "+",
+      "raw_value": "(MapId=122, \tNickName=\"欢乐海岸\",\tMapName=\"Bio-Maya_7_Main\")",
+      "source_line": 374,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "活死人城",
+      "map_id": 126,
+      "map_name": "PZ-City_3_Main",
+      "operation": "+",
+      "raw_value": "(MapId=126, \tNickName=\"活死人城\",\tMapName=\"PZ-City_3_Main\")",
+      "source_line": 375,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "僵尸训练关",
+      "map_id": 127,
+      "map_name": "PZTR-Tutorial_10_Main",
+      "operation": "+",
+      "raw_value": "(MapId=127, \tNickName=\"僵尸训练关\",\tMapName=\"PZTR-Tutorial_10_Main\")",
+      "source_line": 376,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "古墓尸变",
+      "map_id": 128,
+      "map_name": "SV3-Maya_8_Main",
+      "operation": "+",
+      "raw_value": "(MapId=128, \tNickName=\"古墓尸变\",\tMapName=\"SV3-Maya_8_Main\")",
+      "source_line": 377,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "工业园-灰",
+      "map_id": 134,
+      "map_name": "BM-Factory_37_Main",
+      "operation": "+",
+      "raw_value": "(MapId=134, \tNickName=\"工业园-灰\",\tMapName=\"BM-Factory_37_Main\")",
+      "source_line": 378,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "客运中心",
+      "map_id": 135,
+      "map_name": "PZ2-City_5_Main",
+      "operation": "+",
+      "raw_value": "(MapId=135, \tNickName=\"客运中心\",\tMapName=\"PZ2-City_5_Main\")",
+      "source_line": 379,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "冰雪世界",
+      "map_id": 136,
+      "map_name": "AM-Factory_35_simple_Main",
+      "operation": "+",
+      "raw_value": "(MapId=136, \tNickName=\"冰雪世界\",\tMapName=\"AM-Factory_35_simple_Main\") ; 团队",
+      "source_line": 380,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "冰雪世界",
+      "map_id": 137,
+      "map_name": "AM-Factory_35_simple_Main",
+      "operation": "+",
+      "raw_value": "(MapId=137, \tNickName=\"冰雪世界\",\tMapName=\"AM-Factory_35_simple_Main\") ; 歼灭",
+      "source_line": 381,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "沙漠神殿",
+      "map_id": 141,
+      "map_name": "ATD-Capital_22_B_Main",
+      "operation": "+",
+      "raw_value": "(MapId=141, \tNickName=\"沙漠神殿\",\tMapName=\"ATD-Capital_22_B_Main\")",
+      "source_line": 382,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "客运中心2",
+      "map_id": 143,
+      "map_name": "PZ2-City_8_Main",
+      "operation": "+",
+      "raw_value": "(MapId=143, \tNickName=\"客运中心2\",\tMapName=\"PZ2-City_8_Main\")",
+      "source_line": 383,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "display_name": "欢乐海岸",
+      "map_id": 144,
+      "map_name": "Bio2-Maya_7_Main",
+      "operation": "+",
+      "raw_value": "(MapId=144, \tNickName=\"欢乐海岸\",\tMapName=\"Bio2-Maya_7_Main\")",
+      "source_line": 384,
+      "source_section": "UTGame.TGGame"
+    }
+  ],
+  "modes": [
+    {
+      "game_class": "UTGame.TGBombMatch",
+      "mode_id": 4097,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGBombMatch\",ModeId=4097)",
+      "source_line": 255,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGTeamMatch",
+      "mode_id": 4098,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGTeamMatch\",ModeId=4098)",
+      "source_line": 256,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGAnlMatch",
+      "mode_id": 4099,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGAnlMatch\",ModeId=4099)",
+      "source_line": 257,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGIndMatch",
+      "mode_id": 4100,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGIndMatch\",ModeId=4100)",
+      "source_line": 258,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGTRGame",
+      "mode_id": 4101,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGTRGame\",ModeId=4101)",
+      "source_line": 259,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGCPMatch",
+      "mode_id": 4102,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGCPMatch\",ModeId=4102)",
+      "source_line": 260,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGEscapeMatch",
+      "mode_id": 4103,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGEscapeMatch\",ModeId=4103)",
+      "source_line": 261,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGTankGame.TGTankTeamMatch",
+      "mode_id": 515,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGTankGame.TGTankTeamMatch\",ModeId=515)",
+      "source_line": 262,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGTankGame.TGTankDBMatch",
+      "mode_id": 518,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGTankGame.TGTankDBMatch\",ModeId=518)",
+      "source_line": 263,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PVEGame.TGCrazyTeamMatch",
+      "mode_id": 517,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PVEGame.TGCrazyTeamMatch\",ModeId=517)",
+      "source_line": 264,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PVEGame.TGMechaHumanMatch",
+      "mode_id": 513,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PVEGame.TGMechaHumanMatch\",ModeId=513)",
+      "source_line": 265,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PVEGame.TGSVGame",
+      "mode_id": 8193,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PVEGame.TGSVGame\",ModeId=8193)",
+      "source_line": 266,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PVEGame.TGIFGame",
+      "mode_id": 8194,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PVEGame.TGIFGame\",ModeId=8194)",
+      "source_line": 267,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGIFGame.TGIF2Game",
+      "mode_id": 8194,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGIFGame.TGIF2Game\",ModeId=8194)",
+      "source_line": 268,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "LDGame.TGLDGame",
+      "mode_id": 8195,
+      "operation": "+",
+      "raw_value": "(ModeName=\"LDGame.TGLDGame\",ModeId=8195)",
+      "source_line": 269,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "StoryGame.TGStoryGame",
+      "mode_id": 8196,
+      "operation": "+",
+      "raw_value": "(ModeName=\"StoryGame.TGStoryGame\",ModeId=8196)",
+      "source_line": 270,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "ATDGame.ATDGameInfo",
+      "mode_id": 8197,
+      "operation": "+",
+      "raw_value": "(ModeName=\"ATDGame.ATDGameInfo\",ModeId=8197)",
+      "source_line": 271,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGPMTeamMatch",
+      "mode_id": 2049,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGPMTeamMatch\",ModeId=2049)",
+      "source_line": 272,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGPMBombMatch",
+      "mode_id": 2050,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGPMBombMatch\",ModeId=2050)",
+      "source_line": 273,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGPMAnlMatch",
+      "mode_id": 2051,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGPMAnlMatch\",ModeId=2051)",
+      "source_line": 274,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGPMIndMatch",
+      "mode_id": 2052,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGPMIndMatch\",ModeId=2052)",
+      "source_line": 275,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGCMTeamMatch",
+      "mode_id": 1025,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGCMTeamMatch\",ModeId=1025)",
+      "source_line": 276,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGCMBombMatch",
+      "mode_id": 1026,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGCMBombMatch\",ModeId=1026)",
+      "source_line": 277,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGCMAnlMatch",
+      "mode_id": 1027,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGCMAnlMatch\",ModeId=1027)",
+      "source_line": 278,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGCMCPMatch",
+      "mode_id": 1028,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGCMCPMatch\",ModeId=1028)",
+      "source_line": 279,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGBioGame.TGBioMatch",
+      "mode_id": 516,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGBioGame.TGBioMatch\",ModeId=516)",
+      "source_line": 280,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "MechaGame.TGMechaTeamMatch",
+      "mode_id": 514,
+      "operation": "+",
+      "raw_value": "(ModeName=\"MechaGame.TGMechaTeamMatch\",ModeId=514)",
+      "source_line": 281,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "MechaGame.TGMechaDoomMatch",
+      "mode_id": 519,
+      "operation": "+",
+      "raw_value": "(ModeName=\"MechaGame.TGMechaDoomMatch\",ModeId=519)",
+      "source_line": 282,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "UTGame.TGSuperTeamMatch",
+      "mode_id": 4104,
+      "operation": "+",
+      "raw_value": "(ModeName=\"UTGame.TGSuperTeamMatch\",ModeId=4104)",
+      "source_line": 283,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PZGame.PZMatch_Scavenge",
+      "mode_id": 257,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PZGame.PZMatch_Scavenge\",ModeId=257)",
+      "source_line": 284,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "PZGame.PZMatch_Mild",
+      "mode_id": 258,
+      "operation": "+",
+      "raw_value": "(ModeName=\"PZGame.PZMatch_Mild\",ModeId=258)",
+      "source_line": 285,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGBio2Game.TGBio2Match",
+      "mode_id": 521,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGBio2Game.TGBio2Match\",ModeId=521)",
+      "source_line": 286,
+      "source_section": "UTGame.TGGame"
+    },
+    {
+      "game_class": "TGSVGame.TGSV3Game",
+      "mode_id": 259,
+      "operation": "+",
+      "raw_value": "(ModeName=\"TGSVGame.TGSV3Game\",ModeId=259)",
+      "source_line": 287,
+      "source_section": "UTGame.TGGame"
+    }
+  ],
+  "prefixes": [
+    {
+      "game_class": "UTGame.UTDeathmatch",
+      "operation": "+",
+      "prefix": "DM",
+      "raw_value": "(Prefix=\"DM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.UTDeathmatch\")",
+      "source_line": 11,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGBombMatch",
+      "operation": "+",
+      "prefix": "BM",
+      "raw_value": "(Prefix=\"BM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGBombMatch\")",
+      "source_line": 14,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGTeamMatch",
+      "operation": "+",
+      "prefix": "TM",
+      "raw_value": "(Prefix=\"TM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGTeamMatch\")",
+      "source_line": 15,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGAnlMatch",
+      "operation": "+",
+      "prefix": "AM",
+      "raw_value": "(Prefix=\"AM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGAnlMatch\")",
+      "source_line": 16,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGIndMatch",
+      "operation": "+",
+      "prefix": "IM",
+      "raw_value": "(Prefix=\"IM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGIndMatch\")",
+      "source_line": 17,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PVEGame.TGSVGame",
+      "operation": "+",
+      "prefix": "SV",
+      "raw_value": "(Prefix=\"SV\",bUsesCommonPackage=FALSE,GameType=\"PVEGame.TGSVGame\")",
+      "source_line": 18,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGSVGame.TGSV3Game",
+      "operation": "+",
+      "prefix": "SV3",
+      "raw_value": "(Prefix=\"SV3\",bUsesCommonPackage=FALSE,GameType=\"TGSVGame.TGSV3Game\")",
+      "source_line": 19,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGWBGame",
+      "operation": "+",
+      "prefix": "WB",
+      "raw_value": "(Prefix=\"WB\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGWBGame\")",
+      "source_line": 20,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGTRGame",
+      "operation": "+",
+      "prefix": "TR",
+      "raw_value": "(Prefix=\"TR\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGTRGame\")",
+      "source_line": 21,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGCPMatch",
+      "operation": "+",
+      "prefix": "CP",
+      "raw_value": "(Prefix=\"CP\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGCPMatch\")",
+      "source_line": 22,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGPMTeamMatch",
+      "operation": "+",
+      "prefix": "PMTM",
+      "raw_value": "(Prefix=\"PMTM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGPMTeamMatch\")",
+      "source_line": 23,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGTeamMatch_Tutorial",
+      "operation": "+",
+      "prefix": "TMTR",
+      "raw_value": "(Prefix=\"TMTR\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGTeamMatch_Tutorial\")",
+      "source_line": 24,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGPMBombMatch",
+      "operation": "+",
+      "prefix": "PMBM",
+      "raw_value": "(Prefix=\"PMBM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGPMBombMatch\")",
+      "source_line": 25,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGPMAnlMatch",
+      "operation": "+",
+      "prefix": "PMAM",
+      "raw_value": "(Prefix=\"PMAM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGPMAnlMatch\")",
+      "source_line": 26,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGPMIndMatch",
+      "operation": "+",
+      "prefix": "PMIM",
+      "raw_value": "(Prefix=\"PMIM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGPMIndMatch\")",
+      "source_line": 27,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGCMTeamMatch",
+      "operation": "+",
+      "prefix": "CMTM",
+      "raw_value": "(Prefix=\"CMTM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGCMTeamMatch\")",
+      "source_line": 28,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGCMBombMatch",
+      "operation": "+",
+      "prefix": "CMBM",
+      "raw_value": "(Prefix=\"CMBM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGCMBombMatch\")",
+      "source_line": 29,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGCMAnlMatch",
+      "operation": "+",
+      "prefix": "CMAM",
+      "raw_value": "(Prefix=\"CMAM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGCMAnlMatch\")",
+      "source_line": 30,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGCMCPMatch",
+      "operation": "+",
+      "prefix": "CMCP",
+      "raw_value": "(Prefix=\"CMCP\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGCMCPMatch\")",
+      "source_line": 31,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PVEGame.TGMechaHumanMatch",
+      "operation": "+",
+      "prefix": "MHM",
+      "raw_value": "(Prefix=\"MHM\",bUsesCommonPackage=FALSE,GameType=\"PVEGame.TGMechaHumanMatch\")",
+      "source_line": 32,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PVEGame.TGMechaHumanMatch_Tutorial",
+      "operation": "+",
+      "prefix": "MTR",
+      "raw_value": "(Prefix=\"MTR\",bUsesCommonPackage=FALSE,GameType=\"PVEGame.TGMechaHumanMatch_Tutorial\")",
+      "source_line": 33,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "MechaGame.TGMechaTeamMatch",
+      "operation": "+",
+      "prefix": "MTM",
+      "raw_value": "(Prefix=\"MTM\",bUsesCommonPackage=FALSE,GameType=\"MechaGame.TGMechaTeamMatch\")",
+      "source_line": 34,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "MechaGame.TGMechaDoomMatch",
+      "operation": "+",
+      "prefix": "MDM",
+      "raw_value": "(Prefix=\"MDM\",bUsesCommonPackage=FALSE,GameType=\"MechaGame.TGMechaDoomMatch\")",
+      "source_line": 35,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGTankGame.TGTankTeamMatch",
+      "operation": "+",
+      "prefix": "TTM",
+      "raw_value": "(Prefix=\"TTM\",bUsesCommonPackage=FALSE,GameType=\"TGTankGame.TGTankTeamMatch\")",
+      "source_line": 36,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGTankGame.TGTankDBMatch",
+      "operation": "+",
+      "prefix": "TDB",
+      "raw_value": "(Prefix=\"TDB\",bUsesCommonPackage=FALSE,GameType=\"TGTankGame.TGTankDBMatch\")",
+      "source_line": 37,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PVEGame.TGCrazyTeamMatch",
+      "operation": "+",
+      "prefix": "CTM",
+      "raw_value": "(Prefix=\"CTM\",bUsesCommonPackage=FALSE,GameType=\"PVEGame.TGCrazyTeamMatch\")",
+      "source_line": 38,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGBioGame.TGBioMatch",
+      "operation": "+",
+      "prefix": "BIO",
+      "raw_value": "(Prefix=\"BIO\",bUsesCommonPackage=FALSE,GameType=\"TGBioGame.TGBioMatch\")",
+      "source_line": 39,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGBio2Game.TGBio2Match",
+      "operation": "+",
+      "prefix": "BIO2",
+      "raw_value": "(Prefix=\"BIO2\",bUsesCommonPackage=FALSE,GameType=\"TGBio2Game.TGBio2Match\")",
+      "source_line": 40,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGBio3Game.TGBio3Match",
+      "operation": "+",
+      "prefix": "BIO3",
+      "raw_value": "(Prefix=\"BIO3\",bUsesCommonPackage=FALSE,GameType=\"TGBio3Game.TGBio3Match\")",
+      "source_line": 41,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "LDGame.TGLDGame",
+      "operation": "+",
+      "prefix": "LD",
+      "raw_value": "(Prefix=\"LD\",bUsesCommonPackage=FALSE,GameType=\"LDGame.TGLDGame\")",
+      "source_line": 42,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "StoryGame.TGStoryGame",
+      "operation": "+",
+      "prefix": "SRY",
+      "raw_value": "(Prefix=\"SRY\",bUsesCommonPackage=FALSE,GameType=\"StoryGame.TGStoryGame\")",
+      "source_line": 43,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "ATDGame.ATDGameInfo",
+      "operation": "+",
+      "prefix": "ATD",
+      "raw_value": "(Prefix=\"ATD\",bUsesCommonPackage=FALSE,GameType=\"ATDGame.ATDGameInfo\")",
+      "source_line": 44,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGEscapeMatch",
+      "operation": "+",
+      "prefix": "TP",
+      "raw_value": "(Prefix=\"TP\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGEscapeMatch\")",
+      "source_line": 45,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PVEGame.TGIFGame",
+      "operation": "+",
+      "prefix": "IF",
+      "raw_value": "(Prefix=\"IF\",bUsesCommonPackage=FALSE,GameType=\"PVEGame.TGIFGame\")",
+      "source_line": 46,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGIFGame.TGIF2Game",
+      "operation": "+",
+      "prefix": "IF2",
+      "raw_value": "(Prefix=\"IF2\",bUsesCommonPackage=FALSE,GameType=\"TGIFGame.TGIF2Game\")",
+      "source_line": 47,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "UTGame.TGSuperTeamMatch",
+      "operation": "+",
+      "prefix": "STM",
+      "raw_value": "(Prefix=\"STM\",bUsesCommonPackage=FALSE,GameType=\"UTGame.TGSuperTeamMatch\")",
+      "source_line": 48,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PZGame.PZMatch_Scavenge",
+      "operation": "+",
+      "prefix": "PZ",
+      "raw_value": "(Prefix=\"PZ\",bUsesCommonPackage=FALSE,GameType=\"PZGame.PZMatch_Scavenge\")",
+      "source_line": 49,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PZGame.PZMatch_Mild",
+      "operation": "+",
+      "prefix": "PZ2",
+      "raw_value": "(Prefix=\"PZ2\",bUsesCommonPackage=FALSE,GameType=\"PZGame.PZMatch_Mild\")",
+      "source_line": 50,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "PZGame.PZMatch_Tutorial",
+      "operation": "+",
+      "prefix": "PZTR",
+      "raw_value": "(Prefix=\"PZTR\",bUsesCommonPackage=FALSE,GameType=\"PZGame.PZMatch_Tutorial\")",
+      "source_line": 51,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    },
+    {
+      "game_class": "TGADGame.TGADGame",
+      "operation": "+",
+      "prefix": "AD",
+      "raw_value": "(Prefix=\"AD\",bUsesCommonPackage=FALSE,GameType=\"TGADGame.TGADGame\")",
+      "source_line": 52,
+      "source_section": "Engine.GameInfo",
+      "uses_common_package": false
+    }
+  ],
+  "schema_version": 1,
+  "source": "DefaultGame.ini"
+}

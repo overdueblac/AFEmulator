@@ -1,0 +1,146 @@
+<Window x:Class="AFServer.Avalonia.ServerWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MAGI / AF2014 · 服务端控制台" Width="1440" Height="860" MinWidth="1060" MinHeight="680"
+        WindowStartupLocation="CenterScreen" SystemDecorations="None" CanResize="True"
+        Background="#090604" Foreground="#EDAA58" FontFamily="Consolas, Microsoft YaHei UI" FontSize="13"
+        Opened="OnOpened" Closing="OnClosing">
+<Grid ClipToBounds="True">
+        <Border x:Name="MainSurface" BorderBrush="#88501A" BorderThickness="1" Margin="1">
+            <Grid>
+                <Grid.Background>
+                    <RadialGradientBrush Center="35%,30%" GradientOrigin="35%,30%" RadiusX="90%" RadiusY="90%"><GradientStop Color="#1B1007" Offset="0" /><GradientStop Color="#070605" Offset="1" /></RadialGradientBrush>
+                </Grid.Background>
+                <Border Background="#B56920" IsHitTestVisible="False" Opacity="0.13" />
+                <Grid Margin="28,10,28,18">
+                    <Grid.RowDefinitions><RowDefinition Height="28" /><RowDefinition Height="75" /><RowDefinition Height="*" /><RowDefinition Height="Auto" MinHeight="66" /><RowDefinition Height="Auto" MinHeight="28" /></Grid.RowDefinitions>
+                    <TextBlock LineHeight="12" Text="A F 2 0 1 4  /  O P E R A T I O N S  T E R M I N A L" Foreground="{StaticResource Dim}" FontSize="10" VerticalAlignment="Center" />
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="—" Width="37" Padding="15,2" BorderThickness="0" Background="Transparent" Click="MinimizeClick" ToolTip.Tip="最小化" />
+                        <Button Content="□" Width="37" Padding="15,2" BorderThickness="0" Background="Transparent" Click="MaximizeClick" ToolTip.Tip="最大化 / 还原" />
+                        <Button Content="×" Width="37" Padding="15,2" BorderThickness="0" Background="Transparent" Click="CloseClick" ToolTip.Tip="安全关闭" />
+                    </StackPanel>
+                    <Border Grid.Row="1" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1">
+                        <Grid>
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <TextBlock LineHeight="40" Text="MAGI/01" FontFamily="Courier New" FontWeight="Bold" FontSize="38" Foreground="{StaticResource Hot}"><TextBlock.Effect><DropShadowEffect Color="#F38B24" BlurRadius="14" OffsetX="0" OffsetY="0" Opacity="0.4" /></TextBlock.Effect></TextBlock>
+                                <StackPanel Margin="22,4,0,0"><TextBlock LineHeight="18" Text="AF2014 · 服务端控制系统" FontSize="15" /><TextBlock LineHeight="12" Text="LOCAL SERVER / DATABASE LINK" Foreground="{StaticResource Dim}" FontSize="10" Margin="0,6,0,0" /></StackPanel>
+                            </StackPanel>
+                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center"><TextBlock LineHeight="12" Text="MAGI SYSTEM UNIT · AF2014" FontSize="10" Foreground="{StaticResource Dim}" HorizontalAlignment="Right" /><TextBlock LineHeight="27" x:Name="ClockText" Text="--:--:--" FontSize="23" HorizontalAlignment="Right" Margin="0,4,0,0" /></StackPanel>
+                        </Grid>
+                    </Border>
+                    <TabControl x:Name="Pages" Grid.Row="2" Background="Transparent" BorderThickness="0" Foreground="#EBAA59" Padding="0">
+                        <TabControl.Template>
+                            <ControlTemplate TargetType="TabControl">
+                                <Grid><Grid.RowDefinitions><RowDefinition Height="46" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                                    <Border BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1"><ItemsPresenter Name="PART_ItemsPresenter" ItemsPanel="{TemplateBinding ItemsPanel}" /></Border>
+                                    <ContentPresenter Name="PART_SelectedContentHost" Grid.Row="1" Content="{TemplateBinding SelectedContent}" ContentTemplate="{TemplateBinding SelectedContentTemplate}" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,18,0,0" />
+                                </Grid>
+                            </ControlTemplate>
+                        </TabControl.Template>
+                        <TabItem Header="[01] 运行终端">
+                            <Grid><Grid.RowDefinitions><RowDefinition Height="42" /><RowDefinition Height="*" /><RowDefinition Height="28" /></Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="13" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                                <StackPanel Orientation="Horizontal"><TextBlock LineHeight="15" Text="01 / SERVER STREAM" Foreground="{StaticResource Hot}" FontWeight="Bold" /><TextBlock LineHeight="15" x:Name="ServerBadge" Text="待机" Foreground="{StaticResource Green}" Margin="18,0,0,0" /></StackPanel>
+                                <StackPanel Grid.Column="2" Orientation="Horizontal"><TextBlock LineHeight="15" Text="02 / MONGODB STREAM" Foreground="{StaticResource Hot}" FontWeight="Bold" /><TextBlock LineHeight="15" x:Name="MongoBadge" Text="待机" Foreground="{StaticResource Green}" Margin="18,0,0,0" /></StackPanel>
+                                <TextBox x:Name="ServerLog" Grid.Row="1" Classes="log" AutomationProperties.Name="服务端实时日志" />
+                                <GridSplitter Grid.Row="1" Grid.Column="1" Width="1" HorizontalAlignment="Center" Background="#684019" ResizeBehavior="PreviousAndNext" />
+                                <TextBox x:Name="MongoLog" Grid.Row="1" Grid.Column="2" Classes="log" Foreground="#9DCFAB" AutomationProperties.Name="MongoDB 实时日志" />
+                                <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" VerticalAlignment="Bottom">
+                                    <CheckBox x:Name="FollowLog" Content="自动滚动" IsChecked="True" Margin="0,0,20,0" />
+                                    <TextBox x:Name="SearchText" Width="190" Padding="5,2" ToolTip.Tip="点击日志栏选择搜索区域；输入关键字，按 Enter 查找下一处" KeyDown="SearchKeyDown" AutomationProperties.Name="日志搜索" />
+                                    <Button Content="查找" Padding="12,3" Margin="6,0,14,0" Click="SearchClick" />
+                                    <Button Content="清屏" Padding="12,3" Click="ClearClick" ToolTip.Tip="仅清除界面内容，磁盘日志保留" />
+                                    <TextBlock LineHeight="12" x:Name="LogCountText" Margin="18,0,0,0" VerticalAlignment="Center" Foreground="{StaticResource Dim}" FontSize="10" />
+                                </StackPanel>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="[02] 系统总览">
+                            <Grid><Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="110" /></Grid.RowDefinitions>
+                                <Viewbox Stretch="Uniform" Margin="0,0,0,10">
+                                    <Canvas Width="1000" Height="390">
+                                        <Path Stroke="#6A4925" StrokeThickness="1" Data="M 30,30 L 10,30 10,360 30,360 M 970,30 L 990,30 990,360 970,360 M 500,40 L 500,350 M 100,210 L 900,210" Opacity="0.45" />
+                                        <TextBlock LineHeight="13" Canvas.Left="50" Canvas.Top="45" Text="THREE SYSTEMS / ONE CONTROL" Foreground="#7C582E" FontSize="11" />
+                                        <Path Fill="#0F1B14" Stroke="#80D7A6" StrokeThickness="2" Data="M 392,12 L 608,12 608,130 536,178 464,178 392,130 Z M 244,207 L 437,207 476,254 476,358 244,358 Z M 563,207 L 756,207 756,358 524,358 524,254 Z" />
+                                        <Path Stroke="#80D7A6" StrokeThickness="2" Data="M 464,178 L 437,207 476,254 M 536,178 L 563,207 524,254 M 476,319 L 524,319" />
+                                        <TextBlock LineHeight="40" Canvas.Left="454" Canvas.Top="205" Text="MAGI" Foreground="#FFBA64" FontSize="34" FontWeight="Bold"><TextBlock.Effect><DropShadowEffect Color="#F89C3F" BlurRadius="12" OffsetX="0" OffsetY="0" /></TextBlock.Effect></TextBlock>
+                                        <Button Canvas.Left="394" Canvas.Top="14" Width="212" Height="118" BorderThickness="0" Background="Transparent" Click="MongoNodeClick" ToolTip.Tip="查看数据库日志">
+                                            <StackPanel><TextBlock LineHeight="13" Text="数据中枢 / DATABASE" Foreground="#72AE90" FontSize="11" /><TextBlock LineHeight="25" Text="BALTHASAR-2" Foreground="#A5E7BF" FontSize="21" FontWeight="Bold" Margin="0,4,0,7" /><TextBlock LineHeight="18" x:Name="MongoNode" Text="待机" Foreground="#A5E7BF" FontSize="15" /></StackPanel>
+                                        </Button>
+                                        <Button Canvas.Left="246" Canvas.Top="230" Width="200" Height="117" BorderThickness="0" Background="Transparent" Click="DedicatedNodeClick" ToolTip.Tip="检查 DS 资源与状态">
+                                            <StackPanel><TextBlock LineHeight="13" Text="对局引擎 / DEDICATED" Foreground="#72AE90" FontSize="11" /><TextBlock LineHeight="25" Text="CASPER-3" Foreground="#A5E7BF" FontSize="21" FontWeight="Bold" Margin="0,4,0,7" /><TextBlock LineHeight="15" x:Name="DedicatedNode" Text="待机" Foreground="#A5E7BF" FontSize="13" /></StackPanel>
+                                        </Button>
+                                        <Button Canvas.Left="550" Canvas.Top="230" Width="204" Height="117" BorderThickness="0" Background="Transparent" Click="ServerNodeClick" ToolTip.Tip="查看服务端日志">
+                                            <StackPanel><TextBlock LineHeight="13" Text="业务核心 / GAME SERVER" Foreground="#72AE90" FontSize="11" /><TextBlock LineHeight="25" Text="MELCHIOR-1" Foreground="#A5E7BF" FontSize="21" FontWeight="Bold" Margin="0,4,0,7" /><TextBlock LineHeight="18" x:Name="ServerNode" Text="待机" Foreground="#A5E7BF" FontSize="15" /></StackPanel>
+                                        </Button>
+                                        <TextBlock LineHeight="12" Canvas.Left="730" Canvas.Top="370" Text="REF-03 / LIVE SYSTEM FIELD" Foreground="#7C582E" FontSize="10" />
+                                    </Canvas>
+                                </Viewbox>
+                                <Border Grid.Row="1" BorderBrush="{StaticResource Line}" BorderThickness="1" Padding="16">
+                                    <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="180" /></Grid.ColumnDefinitions>
+                                        <StackPanel><TextBlock LineHeight="13" Text="运行条件检查 / SYSTEM DIAGNOSTICS" Foreground="{StaticResource Dim}" FontSize="11" /><TextBlock LineHeight="14" x:Name="DiagnosticsText" Text="检查数据库、业务端口与 DS 文件；实际进图和对局由游戏内验证。" Margin="0,9,14,0" TextWrapping="Wrap" FontSize="12" /></StackPanel>
+                                        <Button x:Name="CheckButton" Classes="diagnostic" Grid.Column="1" Content="检查系统  &gt;" BorderBrush="#FFAB44" FontSize="18" Click="CheckClick" />
+                                    </Grid>
+                                </Border>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="[03] 运行历史">
+                            <Grid><Grid.RowDefinitions><RowDefinition Height="32" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                                <TextBlock LineHeight="15" Text="SESSION ARCHIVE / 最近 100 条启停、检查与配置记录" Foreground="{StaticResource Dim}" />
+                                <TextBox x:Name="HistoryText" Grid.Row="1" Classes="log" TextWrapping="Wrap" AutomationProperties.Name="运行历史" />
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="[04] 设置" Width="101">
+                            <Grid>
+                                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                                    <StackPanel Margin="0,0,8,12">
+                                        <TextBlock LineHeight="23" Text="LOCAL DATABASE / 本机数据库托管" FontSize="20" Foreground="{StaticResource Hot}" TextWrapping="Wrap" Margin="0,6,0,12" />
+                                        <TextBlock LineHeight="15" Text="停止服务后可修改。软件目录内的路径自动使用相对路径，方便整体移动；外置 MongoDB 可指定完整路径。" Foreground="{StaticResource Dim}" TextWrapping="Wrap" Margin="0,0,0,24" />
+                                        <TextBlock LineHeight="15" Text="mongod.exe 路径" />
+                                        <Grid Margin="0,8,0,20">
+                                            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                                            <TextBox x:Name="ExecutablePath" Classes="path" AutomationProperties.Name="MongoDB 可执行文件路径" />
+                                            <Button Grid.Column="1" Content="选择文件" Margin="10,0,0,0" Click="BrowseExecutableClick" />
+                                        </Grid>
+                                        <TextBlock LineHeight="15" Text="数据目录（须选择原数据库的 db 目录，避免连接到空库）" TextWrapping="Wrap" />
+                                        <Grid Margin="0,8,0,20">
+                                            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                                            <TextBox x:Name="DataPath" Classes="path" AutomationProperties.Name="MongoDB 数据目录" />
+                                            <Button Grid.Column="1" Content="选择目录" Margin="10,0,0,0" Click="BrowseDataClick" />
+                                        </Grid>
+                                        <CheckBox x:Name="AutoStartMongo" IsChecked="True" Margin="0,0,0,20">
+                                            <TextBlock LineHeight="15" Text="数据库未运行时，由服务端自动启动 MongoDB" TextWrapping="Wrap" />
+                                        </CheckBox>
+                                        <Button x:Name="SaveSettingsButton" Content="保存配置" HorizontalAlignment="Left" Click="SaveSettingsClick" />
+                                        <TextBlock LineHeight="15" x:Name="SettingsNote" Foreground="{StaticResource Green}" Margin="0,16,0,0" TextWrapping="Wrap" />
+                                        <Border BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,0" Margin="0,24,0,0" Padding="0,18,0,0">
+                                            <TextBlock Text="托管策略：优先连接已有数据库；已有实例在退出后保留。本次创建的数据库在业务与 DS 停止后正常刷盘退出。&#xA;&#xA;设置仅保存到 appsettings.json；不会搬移数据库文件。切换数据目录前请确认存档位置。" Foreground="{StaticResource Dim}" TextWrapping="Wrap" LineHeight="23" />
+                                        </Border>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                    <Border Grid.Row="3" BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,1" Margin="0,16,0,0" Padding="0,8">
+                        <Grid>
+                            <Grid.ColumnDefinitions><ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="StartButton" Classes="action" Width="106" Content="▶ 启动服务" Click="StartClick" BorderBrush="#BC833E" />
+                                <Button x:Name="StopButton" Classes="action" Width="102" Content="■ 安全停止" Click="StopClick" Margin="10,0,0,0" IsEnabled="False" />
+                                <Button Classes="action" Content="打开日志" Click="LogsClick" Margin="10,0,0,0" />
+                            </StackPanel>
+                            <TextBlock LineHeight="13" x:Name="ResourceText" Grid.Column="1" Margin="18,0,0,0" TextAlignment="Right" VerticalAlignment="Center"
+                                       Foreground="{StaticResource Dim}" FontSize="11" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Text, RelativeSource={RelativeSource Self}}" />
+                        </Grid>
+                    </Border>
+                    <Grid Grid.Row="4" Margin="0,8,0,0">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                        <TextBlock LineHeight="17" x:Name="FooterText" Text="SYSTEM STANDBY" FontFamily="Microsoft YaHei UI" FontSize="12" Foreground="#B88B53"
+                                   VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Text, RelativeSource={RelativeSource Self}}" />
+                        <TextBlock LineHeight="12" Grid.Column="1" Text="AF2014 / LOCAL HOST ONLY" Margin="18,0,0,0" VerticalAlignment="Center" Foreground="{StaticResource Dim}" FontSize="10" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

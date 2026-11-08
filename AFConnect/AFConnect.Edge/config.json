@@ -1,0 +1,17 @@
+{
+  "GamePath": "../AF_2014",
+  "ServerHost": "YOUR_SERVER_IP",
+  "ServerPort": 9443,
+  "LocalRolePort": 65005,
+  "LocalZonePort": 65006,
+  "TunnelVersion": 2,
+  "MatchTransport": "Afdev",
+  "ServerCertificateSha256": "",
+  "ClientCertificatePath": "secrets/connect.pfx",
+  "ClientCertificatePasswordEnvironment": "AF_EDGE_CERT_PASSWORD",
+  "GamePublicKeySha256": "",
+  "LauncherPublicKeyPath": "secrets/APClient.dat",
+  "LaunchGame": true,
+  "UdpPortBase": 65008,
+  "UdpPortCount": 4
+}
